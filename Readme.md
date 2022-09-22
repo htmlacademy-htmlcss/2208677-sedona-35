@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Багринцев](https://up.htmlacademy.ru/htmlcss/35/user/2208677).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
