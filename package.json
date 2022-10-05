@@ -10,28 +10,30 @@
 		"gulp-plumber": "^1.2.1",
 		"gulp-postcss": "^9.0.1",
 		"gulp-rename": "^2.0.0",
-		"gulp-stacksvg": "^1.0.3",
+		"gulp-stacksvg": "^1.0.4",
 		"gulp-w3c-html-validator": "^5.1.3",
-		"postcss": "^8.4.16",
+		"postcss": "^8.4.17",
 		"postcss-csso": "^6.0.1",
 		"pre-commit": "^1.2.2",
-		"stylelint": "^14.12.1"
+		"stylelint": "^14.13.0"
 	},
 	"scripts": {
-		"lint": "editorconfig-cli && stylelint 'styles/style.css' && gulp validateMarkup --silent",
+		"lint": "editorconfig-cli && stylelint \"styles/styles.css\" && gulp validateMarkup --silent",
 		"build": "gulp compileProject",
-		"start": "gulp"
+		"start": "gulp runDev"
 	},
 	"browserslist": [
 		"last 2 versions",
 		"not dead",
-		"not ie <= 11",
 		"not op_mini all",
 		"not < 0.25%"
 	],
 	"editorconfig-cli": [
-		"./*.{json,js,html,css,svg}",
-		"!./**/*.min.css"
+		"*.{json,js,html,css,svg,webmanifest}",
+		"icons/**/*.svg",
+		"images/**/*.svg",
+		"styles/**/*.css",
+		"scritps/**/*.js"
 	],
 	"engines": {
 		"node": "16.x"
